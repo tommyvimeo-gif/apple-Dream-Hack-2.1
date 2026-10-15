@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mac Studio – Apple Dream Hack 2.1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"> <span>Dream Hack 2.1</span></a>
+      <div class="nav-links">
+        <a href="imac.html">iMac</a>
+        <a href="macstudio.html">Mac Studio</a>
+        <a href="macmini.html">Mac mini</a>
+        <a href="visionpro.html">Vision Pro</a>
+        <a href="airpods.html">AirPods</a>
+        <a href="ipad.html">iPad</a>
+        <a href="watch.html">Watch</a>
+        <a href="accessories.html">Tipkovnica</a>
+        <a href="history.html">Zgodovina</a>
+        <a href="future.html">Prihodnost</a>
+      </div>
+    </div>
+  </nav>
+  <div class="product-hero">
+    <div>
+      <h1>Mac Studio</h1>
+      <p>Najmočnejši Apple desktop. M5 Max in M5 Ultra – ustvarjen za ekstremne pro delovne tokove, 8K video, 3D in lokalno umetno inteligenco.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="gallery">
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#2c3e50,#4a5568);display:flex;align-items:center;justify-content:center;font-size:90px;">🗄️</div>
+        <div class="caption">Mac Studio – kompaktna moč</div>
+      </div>
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a202c,#2d3748);display:flex;align-items:center;justify-content:center;font-size:90px;">⚡</div>
+        <div class="caption">M5 Ultra – AI powerhouse</div>
+      </div>
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#0f172a,#1e293b);display:flex;align-items:center;justify-content:center;font-size:90px;">🔌</div>
+        <div class="caption">Thunderbolt 5 + 10Gb Ethernet</div>
+      </div>
+    </div>
+    <div class="long-text">
+      <p><strong>Mac Studio</strong> je Apple-ov vrhunski namizni računalnik v izjemno kompaktnem ohišju (19,7 × 19,7 × 9,5 cm). Avgusta 2026 je dobil popolnoma novo generacijo čipov: <strong>M5 Max</strong> in <strong>M5 Ultra</strong>.</p>
+      <p>M5 Max prinaša 18-jedrni CPU (6 super + 12 performance jeder), do 40-jedrni GPU z Neural Acceleratorji v vsakem jedru, do 128 GB unified memory in do 614 GB/s memory bandwidth. Idealna za video montažo, 3D, razvoj programske opreme in lokalne AI modele srednje velikosti.</p>
+      <p>M5 Ultra je pravi monstrum: do 36-jedrni CPU (12 super + 24 performance), do 80-jedrni GPU (najmočnejši Apple Silicon GPU doslej), 1,2 TB/s memory bandwidth in do 512 GB unified memory. Prvič ima Neural Acceleratorje tudi na Ultra nivoju. Omogoča zagon ogromnih jezikovnih modelov (LLM) popolnoma lokalno – brez oblaka, zasebno in brez omejitev žetonov. Apple trdi do 4,3× hitrejšo AI zmogljivost v primerjavi z M3 Ultra in do 9,8× v primerjavi z M1 Ultra.</p>
+      <p>Media Engine podpira do 33 tokov 8K ProRes 422. Povezljivost: 4× Thunderbolt 5, 2× USB-A, HDMI, 10Gb Ethernet, spredaj USB-C in SDXC. Tiha, hladna in izjemno zmogljiva.</p>
+      <p>Cene: M5 Max od 2499 USD, M5 Ultra od 5499 USD. Najvišje konfiguracije z 256/512 GB pomnilnika so namenjene raziskovalcem AI, znanstvenikom in ekstremnim pro uporabnikom.</p>
+    </div>
+    <div class="specs">
+      <h2>Ključne specifikacije M5 Ultra</h2>
+      <div class="specs-grid">
+        <div class="spec-item"><strong>CPU</strong><span>do 36 jeder</span></div>
+        <div class="spec-item"><strong>GPU</strong><span>do 80 jeder + Neural Acc.</span></div>
+        <div class="spec-item"><strong>Pomnilnik</strong><span>do 512 GB</span></div>
+        <div class="spec-item"><strong>Bandwidth</strong><span>1,2 TB/s</span></div>
+        <div class="spec-item"><strong>SSD</strong><span>do 16 TB</span></div>
+        <div class="spec-item"><strong>Porte</strong><span>Thunderbolt 5, 10Gb Eth</span></div>
+        <div class="spec-item"><strong>AI</strong><span>do 4,3× M3 Ultra</span></div>
+        <div class="spec-item"><strong>Zasloni</strong><span>do 8 zunanjih</span></div>
+      </div>
+    </div>
+  </section>
+  <div class="modal" id="modal" onclick="this.classList.remove('active')">
+    <img id="modalImg" alt="Zoomed image">
+  </div>
+  <footer>
+    <p><a href="index.html">← Nazaj na začetek</a> • Apple Dream Hack 2.1</p>
+  </footer>
+  <script>
+    function openZoom(el) {
+      const modal = document.getElementById('modal');
+      const img = document.getElementById('modalImg');
+      img.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#2c3e50"/><stop offset="100%" style="stop-color:#4a5568"/></linearGradient></defs><rect fill="url(#g)" width="100%" height="100%"/><text x="50%" y="45%" fill="#fff" font-size="48" text-anchor="middle" font-family="system-ui">Mac Studio</text><text x="50%" y="55%" fill="#a0aec0" font-size="24" text-anchor="middle" font-family="system-ui">Klikni za zaprtje</text></svg>');
+      modal.classList.add('active');
+    }
+  </script>
+</body>
+</html>
