@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mac mini – Apple Dream Hack 2.1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"> <span>Dream Hack 2.1</span></a>
+      <div class="nav-links">
+        <a href="imac.html">iMac</a>
+        <a href="macstudio.html">Mac Studio</a>
+        <a href="macmini.html">Mac mini</a>
+        <a href="visionpro.html">Vision Pro</a>
+        <a href="airpods.html">AirPods</a>
+        <a href="ipad.html">iPad</a>
+        <a href="watch.html">Watch</a>
+        <a href="accessories.html">Tipkovnica</a>
+        <a href="history.html">Zgodovina</a>
+        <a href="future.html">Prihodnost</a>
+      </div>
+    </div>
+  </nav>
+  <div class="product-hero">
+    <div>
+      <h1>Mac mini</h1>
+      <p>Najmanjši in najdostopnejši Apple desktop. Zdaj z M6 in M5 Pro – ogromna moč v 12,7 × 12,7 cm škatli.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="gallery">
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#0ea5e9,#0284c7);display:flex;align-items:center;justify-content:center;font-size:90px;">📦</div>
+        <div class="caption">Mac mini M6 – 2nm čip</div>
+      </div>
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#6366f1,#4f46e5);display:flex;align-items:center;justify-content:center;font-size:90px;">⚡</div>
+        <div class="caption">M5 Pro – pro zmogljivost</div>
+      </div>
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#1e293b,#334155);display:flex;align-items:center;justify-content:center;font-size:90px;">🔌</div>
+        <div class="caption">Thunderbolt 5 / Wi-Fi 7</div>
+      </div>
+    </div>
+    <div class="long-text">
+      <p><strong>Mac mini</strong> je Apple-ov najmanjši namizni računalnik. Leta 2026 je dobil dva nova čipa: osnovni <strong>M6</strong> (prvi 2 nm Apple Silicon) in višji <strong>M5 Pro</strong>.</p>
+      <p>M6: 12-jedrni CPU (2 super + 4 performance + 6 efficiency), 12-jedrni GPU z Neural Acceleratorji, dual 16-jedrni Neural Engine, do 32 GB pomnilnika, 170 GB/s bandwidth. Do 40 % hitrejši CPU, do 2× hitrejša grafika in do 4× hitrejše AI naloge v primerjavi z M4. Začne se pri 899 USD.</p>
+      <p>M5 Pro: do 18-jedrni CPU, do 20-jedrni GPU z Neural Acceleratorji, 307 GB/s bandwidth, do 64 GB pomnilnika, do 8 TB SSD. Thunderbolt 5, Wi-Fi 7, Bluetooth 6, 2.5Gb Ethernet (opcijsko 10Gb). Začne se pri 1699 USD.</p>
+      <p>Oblika ostaja enaka – majhna aluminijasta kocka. Odlična izbira za študente, razvijalce in vse, ki želijo Apple desktop.</p>
+    </div>
+    <div class="specs">
+      <h2>Ključne specifikacije</h2>
+      <div class="specs-grid">
+        <div class="spec-item"><strong>Velikost</strong><span>12,7 × 12,7 × 5 cm</span></div>
+        <div class="spec-item"><strong>M6 CPU</strong><span>12 jeder</span></div>
+        <div class="spec-item"><strong>M5 Pro CPU</strong><span>do 18 jeder</span></div>
+        <div class="spec-item"><strong>Pomnilnik</strong><span>do 64 GB</span></div>
+        <div class="spec-item"><strong>Wi-Fi</strong><span>Wi-Fi 7</span></div>
+        <div class="spec-item"><strong>Cena od</strong><span>899 USD</span></div>
+      </div>
+    </div>
+  </section>
+  <div class="modal" id="modal" onclick="this.classList.remove('active')">
+    <img id="modalImg" alt="Zoomed">
+  </div>
+  <footer>
+    <p><a href="index.html">← Nazaj na začetek</a> • Apple Dream Hack 2.1</p>
+  </footer>
+  <script>
+    function openZoom(el) {
+      const modal = document.getElementById('modal');
+      const img = document.getElementById('modalImg');
+      img.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"><rect fill="#0ea5e9" width="100%" height="100%"/><text x="50%" y="50%" fill="#fff" font-size="48" text-anchor="middle" font-family="system-ui">Mac mini – Zoom</text></svg>');
+      modal.classList.add('active');
+    }
+  </script>
+</body>
+</html>
