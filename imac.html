@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iMac – Apple Dream Hack 2.1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"> <span>Dream Hack 2.1</span></a>
+      <div class="nav-links">
+        <a href="imac.html">iMac</a>
+        <a href="macstudio.html">Mac Studio</a>
+        <a href="macmini.html">Mac mini</a>
+        <a href="visionpro.html">Vision Pro</a>
+        <a href="airpods.html">AirPods</a>
+        <a href="ipad.html">iPad</a>
+        <a href="watch.html">Watch</a>
+        <a href="accessories.html">Tipkovnica</a>
+        <a href="history.html">Zgodovina</a>
+        <a href="future.html">Prihodnost</a>
+      </div>
+    </div>
+  </nav>
+  <div class="product-hero">
+    <div>
+      <h1>iMac</h1>
+      <p>Najboljši all-in-one računalnik. 24-palčni 4.5K Retina, M4 čip, sedem barv.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="gallery">
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;font-size:90px;">🖥️</div>
+        <div class="caption">iMac M4 – 24" 4.5K</div>
+      </div>
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#f093fb,#f5576c);display:flex;align-items:center;justify-content:center;font-size:90px;">🌈</div>
+        <div class="caption">7 barv</div>
+      </div>
+    </div>
+    <div class="long-text">
+      <p><strong>iMac 27" 5K</strong> (Intel, do 2022) – zadnji velik iMac. 5K Retina, Intel, do 128 GB RAM.</p>
+      <p><strong>iMac M1 (2021)</strong> – revolucija. 11,5 mm tanek, 7 barv, 24" 4.5K, M1 čip.</p>
+      <p><strong>iMac M3 (2023)</strong> – hitrejši, do 24 GB, ray tracing.</p>
+      <p><strong>iMac M4 (2024 – trenutni)</strong> – M4 (do 10-jedrni), do 32 GB, 12MP Center Stage, nano-texture opcija, Apple Intelligence. Cene od ~1499 USD.</p>
+    </div>
+    <div class="specs">
+      <h2>Ključne specifikacije iMac M4</h2>
+      <div class="specs-grid">
+        <div class="spec-item"><strong>Zaslon</strong><span>24" 4.5K Retina</span></div>
+        <div class="spec-item"><strong>Čip</strong><span>Apple M4</span></div>
+        <div class="spec-item"><strong>CPU</strong><span>do 10 jeder</span></div>
+        <div class="spec-item"><strong>GPU</strong><span>do 10 jeder</span></div>
+        <div class="spec-item"><strong>Pomnilnik</strong><span>do 32 GB</span></div>
+        <div class="spec-item"><strong>Shranjevanje</strong><span>do 2 TB SSD</span></div>
+      </div>
+    </div>
+  </section>
+  <div class="modal" id="modal" onclick="this.classList.remove('active')">
+    <img id="modalImg" alt="Zoomed">
+  </div>
+  <footer>
+    <p><a href="index.html">← Nazaj na začetek</a> • Apple Dream Hack 2.1</p>
+  </footer>
+  <script>
+    function openZoom(el) {
+      const modal = document.getElementById('modal');
+      const img = document.getElementById('modalImg');
+      img.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"><rect fill="#667eea" width="100%" height="100%"/><text x="50%" y="50%" fill="#fff" font-size="48" text-anchor="middle" font-family="system-ui">iMac – Zoom</text></svg>');
+      modal.classList.add('active');
+    }
+  </script>
+</body>
+</html>

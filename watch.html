@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Watch – Apple Dream Hack 2.1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"> <span>Dream Hack 2.1</span></a>
+      <div class="nav-links">
+        <a href="imac.html">iMac</a>
+        <a href="macstudio.html">Mac Studio</a>
+        <a href="macmini.html">Mac mini</a>
+        <a href="visionpro.html">Vision Pro</a>
+        <a href="airpods.html">AirPods</a>
+        <a href="ipad.html">iPad</a>
+        <a href="watch.html">Watch</a>
+        <a href="accessories.html">Tipkovnica</a>
+        <a href="history.html">Zgodovina</a>
+        <a href="future.html">Prihodnost</a>
+      </div>
+    </div>
+  </nav>
+  <div class="product-hero">
+    <div>
+      <h1>Apple Watch</h1>
+      <p>Series 12, Ultra 4, Nike, Hermès in legendarna zlata Edition.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="gallery">
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#f87171,#ef4444);display:flex;align-items:center;justify-content:center;font-size:90px;">⌚</div>
+        <div class="caption">Apple Watch Ultra 4</div>
+      </div>
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#fbbf24,#d97706);display:flex;align-items:center;justify-content:center;font-size:90px;">🥇</div>
+        <div class="caption">Zlata Edition 2015</div>
+      </div>
+    </div>
+    <div class="long-text">
+      <p><strong>Apple Watch Series 12 & Ultra 4</strong> (2026). Ultra 4 z do 50 urami baterije. Nike in Hermès različice.</p>
+      <p><strong>Zlata Apple Watch Edition (2015)</strong> – 18-karatno zlato, 10–17 tisoč USD. Danes zbirateljski kos.</p>
+    </div>
+  </section>
+  <div class="modal" id="modal" onclick="this.classList.remove('active')">
+    <img id="modalImg" alt="Zoomed">
+  </div>
+  <footer>
+    <p><a href="index.html">← Nazaj na začetek</a> • Apple Dream Hack 2.1</p>
+  </footer>
+  <script>
+    function openZoom(el) {
+      const modal = document.getElementById('modal');
+      const img = document.getElementById('modalImg');
+      img.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"><rect fill="#ef4444" width="100%" height="100%"/><text x="50%" y="50%" fill="#fff" font-size="48" text-anchor="middle" font-family="system-ui">Apple Watch – Zoom</text></svg>');
+      modal.classList.add('active');
+    }
+  </script>
+</body>
+</html>
