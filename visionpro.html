@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Vision Pro – Apple Dream Hack 2.1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"> <span>Dream Hack 2.1</span></a>
+      <div class="nav-links">
+        <a href="imac.html">iMac</a>
+        <a href="macstudio.html">Mac Studio</a>
+        <a href="macmini.html">Mac mini</a>
+        <a href="visionpro.html">Vision Pro</a>
+        <a href="airpods.html">AirPods</a>
+        <a href="ipad.html">iPad</a>
+        <a href="watch.html">Watch</a>
+        <a href="accessories.html">Tipkovnica</a>
+        <a href="history.html">Zgodovina</a>
+        <a href="future.html">Prihodnost</a>
+      </div>
+    </div>
+  </nav>
+  <div class="product-hero">
+    <div>
+      <h1>Apple Vision Pro</h1>
+      <p>Prostorsko računalništvo. 23 milijonov pikslov. Zdaj z M5 čipom in Dual Knit Band.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="gallery">
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#10b981,#059669);display:flex;align-items:center;justify-content:center;font-size:90px;">🥽</div>
+        <div class="caption">Vision Pro z Dual Knit Band</div>
+      </div>
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#0f766e,#134e4a);display:flex;align-items:center;justify-content:center;font-size:90px;">👁️</div>
+        <div class="caption">23 milijonov pikslov</div>
+      </div>
+      <div class="gallery-item" onclick="openZoom(this)">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#1e3a5f,#0c4a6e);display:flex;align-items:center;justify-content:center;font-size:90px;">🧠</div>
+        <div class="caption">M5 + R1 čip</div>
+      </div>
+    </div>
+    <div class="long-text">
+      <p><strong>Apple Vision Pro</strong> je prva Apple naprava za prostorsko računalništvo. Združuje digitalne vsebine z resničnim svetom. Uporabnik komunicira z očmi, rokami in glasom.</p>
+      <p>Mikro-OLED zaslona imata skupaj 23 milijonov pikslov. R1 čip zagotavlja 12 ms latenco. M5 čip prinaša 10-jedrni CPU, 10-jedrni GPU z Neural Acceleratorji, 16-jedrni Neural Engine. 10 % več pikslov, do 120 Hz, do 50 % hitrejše AI funkcije.</p>
+      <p>Nov Dual Knit Band je mehak, dihljiv in uravnotežen. Baterija: do 2,5 ure splošne uporabe, do 3 ure videa. Cena od 3499 USD.</p>
+      <p>Omogoča Mac Virtual Display, prostorske filme, Environments, Siri AI in Visual Intelligence.</p>
+    </div>
+    <div class="specs">
+      <h2>Ključne specifikacije</h2>
+      <div class="specs-grid">
+        <div class="spec-item"><strong>Zaslona</strong><span>Mikro-OLED, 23M pikslov</span></div>
+        <div class="spec-item"><strong>Čip</strong><span>M5 + R1</span></div>
+        <div class="spec-item"><strong>Osveževanje</strong><span>do 120 Hz</span></div>
+        <div class="spec-item"><strong>Baterija</strong><span>do 3 ure videa</span></div>
+        <div class="spec-item"><strong>Teža</strong><span>~750–800 g</span></div>
+        <div class="spec-item"><strong>Cena od</strong><span>3499 USD</span></div>
+      </div>
+    </div>
+  </section>
+  <div class="modal" id="modal" onclick="this.classList.remove('active')">
+    <img id="modalImg" alt="Zoomed">
+  </div>
+  <footer>
+    <p><a href="index.html">← Nazaj na začetek</a> • Apple Dream Hack 2.1</p>
+  </footer>
+  <script>
+    function openZoom(el) {
+      const modal = document.getElementById('modal');
+      const img = document.getElementById('modalImg');
+      img.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"><rect fill="#10b981" width="100%" height="100%"/><text x="50%" y="50%" fill="#fff" font-size="48" text-anchor="middle" font-family="system-ui">Vision Pro – Zoom</text></svg>');
+      modal.classList.add('active');
+    }
+  </script>
+</body>
+</html>
