@@ -33,12 +33,12 @@
   <section class="section">
     <div class="gallery">
       <div class="gallery-item" onclick="openZoom(this)">
-        <div style="width:100%;height:100%;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;font-size:90px;">🖥️</div>
-        <div class="caption">iMac M4 – 24" 4.5K</div>
+        <img src="https://www.apple.com/v/imac/w/images/overview/welcome/welcome_hero__f23bdvt2rzam_large.jpg" alt="iMac M4 colors" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        <div class="caption">iMac M4 – 7 barv</div>
       </div>
       <div class="gallery-item" onclick="openZoom(this)">
-        <div style="width:100%;height:100%;background:linear-gradient(135deg,#f093fb,#f5576c);display:flex;align-items:center;justify-content:center;font-size:90px;">🌈</div>
-        <div class="caption">7 barv</div>
+        <img src="https://www.apple.com/v/imac/w/images/overview/highlights/highlights_design_endframe__cf4hroyqtgly_large.jpg" alt="iMac purple" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        <div class="caption">iMac s tipkovnico</div>
       </div>
     </div>
     <div class="long-text">
@@ -69,7 +69,8 @@
     function openZoom(el) {
       const modal = document.getElementById('modal');
       const img = document.getElementById('modalImg');
-      img.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"><rect fill="#667eea" width="100%" height="100%"/><text x="50%" y="50%" fill="#fff" font-size="48" text-anchor="middle" font-family="system-ui">iMac – Zoom</text></svg>');
+      const src = el.querySelector('img').src;
+      img.src = src;
       modal.classList.add('active');
     }
   </script>
